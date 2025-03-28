@@ -1,4 +1,4 @@
-package Factory.HeroClasses;
+package Factory;
 
 public class HeroCreator {
 

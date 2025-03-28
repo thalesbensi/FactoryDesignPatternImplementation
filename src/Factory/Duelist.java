@@ -1,18 +1,17 @@
-package Factory.HeroClasses;
+package Factory;
 
-public class Vanguard extends Hero {
+public class Duelist extends Hero {
     private String name;
     private Integer health;
 
-
-    protected Vanguard(String name, Integer health) {
+    protected Duelist(String name, Integer health) {
         this.name = name;
         this.health = health;
     }
 
     @Override
     public String action() {
-        return "I'm " + name + " and I tanked damage!";
+        return "I'm " + name + " and I deal damage!";
     }
 
     @Override
@@ -20,26 +19,16 @@ public class Vanguard extends Hero {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public Integer getHealth() {
         return health;
     }
 
-    public void setHealth(Integer health) {
-        this.health = health;
-    }
-
-
     @Override
     public String toString() {
-        return "Vanguard{" +
+        return "Duelist{" +
                 "name='" + name + '\'' +
                 ", health=" + health +
                 '}';
     }
 }
-
